@@ -23,12 +23,7 @@ def quadraticF(a, b, c):
     
     D = math.pow(b, 2) - 4 * a * c  # This is the calculated discriminant of the quadratic equation.
     
-<<<<<<< HEAD
-    print("\nFor your quadratic equation the discriminant is D=", D)
-    print("Based on this discrimiant we will now proceed to calculate the solutions, if there are any.")
-=======
     print("\nThe discriminant of your quadratic equation is D=", D)
->>>>>>> refs/remotes/origin/main
     
     # Find the solutions of the quadratic equation based on the value of the discriminant D.
     if D > 0:
