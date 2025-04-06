@@ -13,24 +13,28 @@ import math, sys
 def quadraticF(a, b, c):
     
     # Check that parameter 'a' is not zero, so a quadratic equation of the form ax² + bx + c = 0 exists.
-    # If a is zero, then mention it using a print() statement, and give the single solution. Then exit the program (important to).
+    # If a is zero, then mention it using a print() statement, and calculate and print the unique solution. Then exit the program (Vert important to).
     if a == 0:
         print("\n\nThis is not a quadratic equation. It has exactly one solution.")
         result1 = (-c/b)
         print("The solution of the equation is x =", result1)
-        print("Bye!")
+        print("Thank you for trying. Bye!")
         sys.exit()
     
-    D = math.pow(b, 2) - 4 * a * c  # This is the discriminant of the quadratic equation.
+    D = math.pow(b, 2) - 4 * a * c  # This is the calculated discriminant of the quadratic equation.
     
+<<<<<<< HEAD
     print("\nFor your quadratic equation the discriminant is D=", D)
     print("Based on this discrimiant we will now proceed to calculate the solutions, if there are any.")
+=======
+    print("\nThe discriminant of your quadratic equation is D=", D)
+>>>>>>> refs/remotes/origin/main
     
     # Find the solutions of the quadratic equation based on the value of the discriminant D.
     if D > 0:
         root1 = round((-b + math.sqrt(D))/ (2*a), 4)
         root2 = round((-b - math.sqrt(D))/ (2*a), 4)
-        print(f"\nThe solutions of the equation are x1 = {root1} and x2 = {root2}")
+        print(f"\nThe tow solutions of the quadratic equation are x1 = {root1} and x2 = {root2}")
     elif D == 0:
         root = round((-b)/(2*a), 4)
         print(f"\nThe equation has exactly one solution x = {root}")
