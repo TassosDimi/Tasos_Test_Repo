@@ -29,7 +29,7 @@ def quadraticF(a, b, c):
     if D > 0:
         root1 = round((-b + math.sqrt(D))/ (2*a), 4)
         root2 = round((-b - math.sqrt(D))/ (2*a), 4)
-        print(f"\nThe tow solutions of the quadratic equation are x1 = {root1} and x2 = {root2}")
+        print(f"\nThe two solutions of the quadratic equation are x1 = {root1} and x2 = {root2}")
     elif D == 0:
         root = round((-b)/(2*a), 4)
         print(f"\nThe equation has exactly one solution x = {root}")
