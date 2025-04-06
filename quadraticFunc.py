@@ -24,6 +24,7 @@ def quadraticF(a, b, c):
     D = math.pow(b, 2) - 4 * a * c  # This is the discriminant of the quadratic equation.
     
     print("\nFor your quadratic equation the discriminant is D=", D)
+    print("Based on this discrimiant we will now proceed to calculate the solutions, if there are any.")
     
     # Find the solutions of the quadratic equation based on the value of the discriminant D.
     if D > 0:
